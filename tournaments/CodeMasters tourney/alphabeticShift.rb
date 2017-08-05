@@ -1,4 +1,5 @@
-# Given a string, replace each its character by the next one in the English alphabet (z would be replaced by a).
+# Given a string, replace each its character by the next one
+# in the English alphabet (z would be replaced by a).
 
 # Example
 
@@ -7,10 +8,9 @@
 
 def alphabeticShift(inputString)
   outputString = ''
-  inputString.each_char  do |letter|
+  inputString.each_char do |letter|
     letter = letter == 'z' ? 'a' : letter.next
     outputString << letter
   end
   return outputString
 end
-
