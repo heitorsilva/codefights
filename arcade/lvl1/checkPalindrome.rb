@@ -10,5 +10,5 @@
 # checkPalindrome(inputString) = true.
 
 def checkPalindrome(inputString)
-   inputString == inputString.reverse
+   inputString.downcase == inputString.downcase.reverse
 end
